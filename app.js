@@ -1,6 +1,11 @@
 const express = require( 'express' );
 const app = express(); // creates an instance of an express application
 
+app.use(function (req, res, next) {
+  console.log(req.method, req.originalUrl);
+  next();
+});
+
 app.get('/', (req, res, next) => {
   res.send('WELCOME TO THE PAGE!');
 });
