@@ -2,7 +2,8 @@ const express = require( 'express' );
 const app = express(); // creates an instance of an express application
 
 app.use(function (req, res, next) {
-  console.log(req.method, req.originalUrl);
+  console.log('req.method: ', req.method);
+  console.log('req.originalUrl: ', req.originalUrl);
   next();
 });
 
