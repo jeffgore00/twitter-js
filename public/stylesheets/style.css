@@ -43,13 +43,16 @@ code {
 
 .tweetbox {
   padding: 7px;
+  color: darkcyan;
+  list-style: none;
 }
 
 .tweetbox img {
   float: left;
   height: 48px;
   width: 48px;
-  content:url("http://lorempixel.com/48/48");
+  margin-right: 10px;
+  content:url("https://yt3.ggpht.com/a-/AJLlDp1nApHN8lojbFAL50lLxFOgBqCqtvcO1Ebl0Q=s900-mo-c-c0xffffffff-rj-k-no");
 }
 .content {
   margin-left: 60px;

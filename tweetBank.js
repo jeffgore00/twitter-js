@@ -1,8 +1,10 @@
 const _ = require('lodash');
 const data = [];
+let idCounter = 1;
 
 function add (name, content) {
-  data.push({ name: name, content: content });
+  data.push({ name: name, content: content, id: idCounter});
+  idCounter++;
 }
 
 function list () {
@@ -33,4 +35,12 @@ const getFakeTweet = function() {
 for (let i = 0; i < 10; i++) {
   module.exports.add( getFakeName(), getFakeTweet() );
 }
+
+
+// module.exports.add( 'Jeff Gore', 'James Harden is the MVP no question this year' );
+
+// module.exports.add( 'Jeff Gore', 'LeBron is still my bae' );
+
+// module.exports.add( 'Nick Milazzo', 'James Harden is a bad man' );
+
 
